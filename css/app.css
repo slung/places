@@ -1,0 +1,92 @@
+
+
+/* Generic */
+
+a, a:hover, a:focus
+{
+    color: #FFFFFF !important;
+    text-decoration:none !important;
+}
+
+body
+{
+    
+    color: #FFFFFF;
+    
+	margin: 0;
+    padding: 0;
+
+    background-image: url(../images/site/background_small.png);
+/*    background-size:cover;*/
+}
+
+.modal
+{
+    width: 600px;
+    height: 337px;
+    overflow: hidden;
+    border: none !important;
+    outline: none !important;
+    left: 50%;
+    margin-left:-300px;
+    top: 50% !important;
+    margin-top: -168px;
+}
+
+.carousel
+{
+	margin: 0;
+}
+
+.carousel-control
+{
+	cursor: pointer;
+}
+
+.carousel-indicators li
+{
+	background-color: #ccc;
+}
+
+.carousel-indicators .active
+{
+	background-color: #000000;
+}
+
+.footer
+{
+    width:300px;
+    
+    font-family:'GothamBook';
+    font-size:10px;
+    color: #FFFFFF;
+    text-align:center;
+    
+    margin: 0 auto;
+    margin-bottom:5px;
+}
+
+ /*Animations */ 
+.view-animate.ng-enter, .view-animate.ng-leave {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s;
+ 
+  display:block;
+  width:100%;
+ 
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+.view-animate.ng-enter {
+  opacity: 0.7;
+}
+.view-animate.ng-enter.ng-enter-active {
+    opacity:1;
+}
+.view-animate.ng-leave.ng-leave-active {
+  opacity:0.1;
+}

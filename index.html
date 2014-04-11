@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="places">
+	<head>
+		<meta charset="utf-8">
+        <meta name="author" content="Silviu Ioan Lung">
+        
+        <link rel="shortcut icon" href="images/site/favicon.ico"/>
+        
+        <title>Places 2 go 2</title>
+		
+        <!-- jQuery scripts -->
+        <script type="text/javascript" src="libs/jQuery/jquery-2.0.3.min.js"></script>
+        
+		<!-- AngularJS scripts -->
+        <script type="text/javascript" src="libs/angular/angular.js"></script>
+        <script type="text/javascript" src="libs/angular/angular-route.min.js"></script>
+        <script type="text/javascript" src="libs/angular/ngStorage.min.js"></script>
+		
+        <!-- App scripts -->
+		<script src="src/app.js"></script>
+        <script src="src/directives.js"></script>
+        
+        <script src="src/services/geocoder-service.js"></script>
+        <script src="src/services/geolocation-service.js"></script>
+        
+        <script src="src/directives.js"></script>
+		<script src="src/controllers/MapCtrl.js"></script>
+        
+        <!-- Maps scripts -->
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	    <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/tags/infobox/1.1.9/src/infobox.js"></script>
+        
+        <!-- Google Analytics -->
+        <script src="src/analytics.js"></script>
+        
+        <!-- Style -->
+        <link rel="stylesheet" href="css/grids/grids-min.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/map.css">
+        
+	</head>
+	<body>
+		
+		  <div ng-view></div>
+	      
+	</body>
+</html>
